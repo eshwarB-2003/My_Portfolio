@@ -10,7 +10,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
-
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -20,6 +19,7 @@
     "lucide-react": "^0.544.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^7.9.3",
     "react-typing-effect": "^2.0.5"
   },
   "devDependencies": {
