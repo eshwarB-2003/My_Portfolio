@@ -1,0 +1,80 @@
+.certifications-section {
+  position: relative;
+  width: 100%; margin: 0; border-radius: 0; padding: 4rem 6%;
+  background: linear-gradient(135deg, #1a0026, #2d0d3c);
+  color: #fff;
+  overflow: hidden;/* controls elements and hide the content if it becomes bigger*/
+}
+
+.certifications-bg-shape {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.4), transparent 70%); /* it forms a background circle design with gradient of thsi color with transparent */
+  border-radius: 50%;
+  bottom: -150px;
+  left: -100px;
+  z-index: 0;
+}
+
+.certifications-content {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: center;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* based on our screen it fits the columns size*/
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certificate-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);/* lets us too roTATE AN ELEMENT without affecting any elements moves the element upwards from the position */
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.certificate-card h2 {
+  font-size: 1.4rem;
+  color: gold;
+  margin-bottom: 0.5rem;
+}
+
+body.light .certificate-card h2 {
+  font-size: 1.4rem;
+  color: darkgoldenrod;
+  margin-bottom: 0.5rem;
+}
+.certificate-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 25px;
+  background-color: orange;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: gold;
+  color: #222;
+}
