@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "predeploy": "npm run build",
     "preview" :"vite preview",
     "build": "vite build",
     "lint": "eslint .",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
