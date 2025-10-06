@@ -8,7 +8,7 @@ const Education: React.FC = () => {
 
       <div className="education-content">
         <div className="edu-text">
-          <h1 className="typing-gradient glow">🎓 Education</h1>
+          <h1 className="typing-gradient glow"> Education</h1>
 
           <div className="edu-item">
             <h2>Master of Science in Software Engineering</h2>
