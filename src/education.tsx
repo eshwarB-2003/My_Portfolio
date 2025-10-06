@@ -11,7 +11,7 @@ const Education: React.FC = () => {
           <h1 className="typing-gradient glow"> Education</h1>
 
           <div className="edu-item">
-            <h2>Master of Science in Software Engineering</h2>
+            <h2>Master of Science in Software Engineering (M.Sc.)</h2>
             <h3>University of Limerick, Ireland (2025–2026)</h3>
             <p>
               Currently pursuing my Master’s degree with a focus on advanced software topics, Designing a 
@@ -21,7 +21,7 @@ const Education: React.FC = () => {
           </div>
 
           <div className="edu-item">
-            <h2>Bachelor of Engineering in Computer Science</h2>
+            <h2>Bachelor of Engineering in Computer Science(B.E.)</h2>
             <h3>Sathyabama Institute of Science and Technology (2021–2025)</h3>
             <p>
               Graduated with distinction (1.1 Honors) / (8.02 / 10.0 CGPA) . Built strong foundations in algorithms, databases,
