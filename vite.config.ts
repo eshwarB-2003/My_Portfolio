@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 //https://vite.dev/config
 export default defineConfig({
   plugins: [react()],
-  base: "/My_Portfolio/",  // MUST MATCH your repo name
+  base: '/My_Portfolio/',  // MUST MATCH your repo name
   build: {
-    outDir: "dist",         // GitHub Pages uses docs folder
+    outDir: 'dist',         // GitHub Pages uses docs folder
   },
 });
