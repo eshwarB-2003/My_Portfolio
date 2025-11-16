@@ -1,0 +1,155 @@
+.journey-section {
+  position: relative;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #17031a, #2a0d3c);
+  color: #fff;
+  width: 100%;
+}
+
+.journey-bg-shape {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(225, 140, 0, 0.4), transparent 70%);
+  border-radius: 50%;
+  top: -150px;
+  left: -150px;
+  z-index: 1;
+}
+
+.journey-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  padding: 2rem;
+}
+
+.typing-text {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.typing-gradient {
+  background: linear-gradient(90deg, #ff8c00, #ff00ff, #00ffff, #ff8c00);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s infinite linear;
+  font-weight: bold;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.typing-gradient.glow {
+  text-shadow: 0 0 10px rgba(255,255,255,0.8), 
+               0 0 20px rgba(255,165,0,0.5);
+}
+
+.journey-timeline {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 5px solid orange;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(255,165,0,0.4);
+}
+
+.timeline-item h2 {
+  color: orange;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-item p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+body.light .journey-items {
+    color: black;
+} 
+
+@media (max-width: 768px) {
+  .journey-section {
+    padding: 4rem 4%;
+    text-align: center;
+  }
+
+  .journey-bg-shape {
+    width: 350px;
+    height: 350px;
+    top: -120px;
+    right: -120px;
+  }
+
+  .journey-content {
+    padding: 1.5rem;
+  }
+
+  .typing-text {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-item {
+    padding: 1.2rem;
+  }
+
+  .timeline-item h2 {
+    font-size: 1.3rem;
+  }
+
+  .timeline-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 480px) {
+  .journey-section {
+    padding: 3rem 3%;
+  }
+
+  .journey-bg-shape {
+    width: 240px;
+    height: 240px;
+    top: -80px;
+    right: -80px;
+  }
+
+  .typing-text {
+    font-size: 1.4rem;
+  }
+
+  .timeline-item {
+    padding: 1rem;
+  }
+
+  .timeline-item h2 {
+    font-size: 1.15rem;
+  }
+
+  .timeline-item p {
+    font-size: 0.88rem;
+  }
+}

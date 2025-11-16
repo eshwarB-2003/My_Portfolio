@@ -1,0 +1,198 @@
+.education-section {
+  position: relative;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #17031a, #2a0d3c);
+  color: #fff;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0;
+  padding: 4rem 6%;
+}
+
+.education-bg-shape {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(225,140,0,0.4), transparent 70%);
+  border-radius: 50%;
+  top: -150px;
+  left: -150px;
+  z-index: 0;
+}
+
+.education-content {
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typing-gradient {
+  background: linear-gradient(90deg, #ff8c00, #ff00ff, #00ffff, #ff8c00);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: gradientMove 6s infinite linear;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glow {
+  text-shadow: 0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(255,165,0,0.5);
+}
+
+.edu-text {
+  text-align: center;
+  width: 100%;
+}
+
+.edu-item {
+  margin: 2rem 0;
+  background: rgba(255,255,255,0.1);
+  border-left: 5px solid orange;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(255,165,0,0.4);
+}
+
+.edu-item h2 {
+  color: orange;
+  margin-bottom: 0.4rem;
+  font-size: 1.5rem;
+}
+
+.edu-item h3 {
+  color: #ddd;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+body.light .edu-item h3 {
+  color:green;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+body.light .edu-item p{
+  color:#222;
+  line-height:1.7;
+}
+
+
+.edu-item p {
+  color: #fff;
+  line-height: 1.7;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 10px 25px;
+  background-color: orange;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: gold;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+
+  .education-section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  /* Make the glowing shape smaller */
+  .education-bg-shape {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+  }
+
+  .education-content {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .edu-item {
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+  }
+
+  .edu-item h2 {
+    font-size: 1.3rem;
+  }
+
+  .edu-item h3 {
+    font-size: 1rem;
+  }
+
+  .edu-item p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ================================
+       📱 EXTRA SMALL PHONES
+   ================================ */
+@media (max-width: 480px) {
+
+  .education-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .education-bg-shape {
+    width: 220px;
+    height: 220px;
+    top: -70px;
+    left: -70px;
+  }
+
+  .edu-item {
+    padding: 1rem;
+    margin: 1.2rem 0;
+  }
+
+  .edu-item h2 {
+    font-size: 1.2rem;
+  }
+
+  .edu-item h3 {
+    font-size: 0.95rem;
+  }
+
+  .edu-item p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .resume-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+

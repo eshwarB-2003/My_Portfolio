@@ -1,0 +1,213 @@
+.projects-section {
+  position: relative;
+  width: 100%; margin: 0; border-radius: 0; padding: 4rem 6%;
+  background: linear-gradient(135deg, #17031a, #2a0d3c);
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.projects-bg-shape {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,140,0,0.4), transparent 70%);
+  border-radius: 50%;
+  bottom: -200px;
+  right: -200px;
+  z-index: 0;
+}
+body.light .project-content {
+  color: #222;
+}
+body.light .tech-stack{
+  color: #222;
+}
+
+.typing-gradient {
+  background: linear-gradient(90deg, #ff8c00, #ff00ff, #00ffff, #ff8c00);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: gradientMove 6s infinite linear;
+}
+
+.glow {
+  text-shadow: 0 0 10px rgba(255,255,255,0.8),
+               0 0 20px rgba(255,165,0,0.5);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.projects-content {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  z-index: 1;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  border-left: 5px solid orange;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 165, 0, 0.4);
+}
+
+.project-card h2 {
+  color: orange;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.tech-stack {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-stack span {
+  background: rgba(255, 255, 255, 0.15);
+   border-radius: 25px;
+  padding: 6px 14px;
+   font-size: 0.9rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+body.light .tech-stack span {
+   background: rgba(255, 255, 255, 0.45);
+  border-radius: 25px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  color: #222;
+  transition: all 0.3s ease;
+}
+body.light .tech-stack span:hover {
+  background: orange;
+  color: #222;
+}
+
+.tech-stack span:hover {
+  background: orange;
+  color: #222;
+}
+
+
+.tech-stack span:hover {
+  background: orange;
+  color: #222;
+}
+body.light .project-content-2{
+  color:#222;
+}
+
+@media (max-width: 768px) {
+
+  .projects-section {
+    padding: 2.5rem 4%;
+    text-align: center;
+  }
+
+  /* Background shape smaller on mobile */
+  .projects-bg-shape {
+    width: 350px;
+    height: 350px;
+    bottom: -100px;
+    right: -100px;
+  }
+
+  .projects-content {
+    max-width: 100%;
+  }
+
+  /* Grid becomes single column */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  /* Smaller card spacing */
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Tech stack spacing */
+  .tech-stack {
+    justify-content: center;
+  }
+
+  .tech-stack span {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
+
+/* ===========================
+     📱 EXTRA SMALL SCREENS
+   =========================== */
+@media (max-width: 480px) {
+
+  .projects-section {
+    padding: 2rem 3%;
+  }
+
+  .projects-grid {
+    gap: 1.2rem;
+  }
+
+  .project-card {
+    padding: 1.3rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .projects-bg-shape {
+    width: 250px;
+    height: 250px;
+    bottom: -80px;
+    right: -80px;
+  }
+}

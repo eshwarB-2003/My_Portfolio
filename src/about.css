@@ -1,0 +1,222 @@
+.about-section {
+  position: relative;
+  padding: 8rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #17031a, #2a0d3c);
+  color: #fff;
+}
+
+.about-bg-shape {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(225, 140, 0, 0.4), transparent 70%);
+  border-radius: 50%;
+  top: -150px;
+  right: -150px;
+  z-index: 1;
+}
+
+.about-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+/*.about-section,*/
+.about-content {
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0px;
+  /*padding: 6rem 6%; keeps even side spacing */
+}
+
+.profile-container {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+   border: 5px solid orange;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.text-container {
+  flex: 2;
+  padding: 1rem 2rem;
+}
+
+.typing-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.typing-gradient {
+  background: linear-gradient(90deg, #ff8c00, #ff00ff, #00ffff, #ff8c00);
+  background-size: 300%;
+  -webkit-background-clip: text; /* clips the bg shape to the text*/ 
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: gradientMove 6s infinite linear;
+}
+/* Animating Background text colors from left to right*/
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.typing-gradient.glow {
+  text-shadow: 0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(255,165,0,0.5);
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+body.dark .resume-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 25px;
+  color:#222;
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none; /* Webkit makes sure these all features support in different browsers like chrome , firefox , etc . and makes the text dectorations to  none  */
+  transition: all 0.3s ease;  /* smoothly changes text color in hover*/
+}
+
+body.dark .resume-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 25px;
+  color:#222;
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.resume-btn:hover {
+  background-color: gold;
+  color: #fff;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+ /* gap: 2rem; space between image and text */
+}
+
+.about-container img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.about-text {
+  flex: 1; /* text takes remaining space */
+}
+
+
+@media (max-width: 768px) {
+
+  .about-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  /* Reduce background glow */
+  .about-bg-shape {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -100px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-container {
+    margin-bottom: 2rem;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .typing-text {
+    font-size: 1.7rem;
+  }
+
+  .about-intro {
+    font-size: 1.1rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .text-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+
+  .typing-text {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .about-bg-shape {
+    width: 220px;
+    height: 220px;
+    top: -70px;
+    right: -70px;
+  }
+}
