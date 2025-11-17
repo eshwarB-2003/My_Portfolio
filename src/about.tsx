@@ -2,6 +2,20 @@ import React from "react";
 import './about.css';
 import ReactTypingEffect from "react-typing-effect";
 import profileImg from "./assets/img.jpg";
+/*
+About Section component:
+
+1) this component displays:
+2) My profile image
+3) intro typing animation
+4) small description about myself
+5) A button where it downloads my resume
+
+ -> it uses react typing effect for animated text 
+-> CSS for layout, gradients and  glow effects
+*/
+
+
 const About: React.FC = () => {
 return (
     <section id="about" className="about-section">
@@ -10,13 +24,13 @@ return (
 
          <div className="about-content">
             <div className="profile-container">
-            <img src= {profileImg} alt="Vaitheeshwar" className="profile-pic"/>
+            <img src= {profileImg} alt="Vaitheeshwar Image" className="profile-pic"/>
          </div>
          <div className="text-container">
             <h1 className ="typing-text">
                 <ReactTypingEffect
-                text={["Hi, this is Vaitheeshwar Badrinarayanan!",
-                "Welcome to my portfolio"
+                text={["Hello, this is Vaitheeshwar Badrinarayanan !!!",
+                "Welcome to my Portfolio"
               ]}
               speed={100}
               eraseSpeed={80}

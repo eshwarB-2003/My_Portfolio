@@ -37,8 +37,8 @@ const Contact: React.FC = () => {
 
           <div className="contact-card">
             <MapPin className="icon" />
-            <h2>Location</h2>
-            <p className="contact-text">Limerick, Ireland</p>
+            <h2> Location </h2>
+            <p className="contact-text"> Limerick, Ireland </p>
           </div>
         </div>
     <a
