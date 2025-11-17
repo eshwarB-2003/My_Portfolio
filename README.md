@@ -71,7 +71,7 @@ Deploy steps:
 
 1) Run npm run build
 
-2) Commit and push the new docs/ folder
+2) Commit and push the new dist/ folder
 
 Go to:
 GitHub → Repository Settings → Pages → Branch → main → /dist
