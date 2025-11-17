@@ -1,3 +1,5 @@
+Digital Portfolio for CS5709 - Software Engineering Evolution (Phase 2)
+
 Personal Portfolio Website – React + TypeScript + Vite
 
 A modern, responsive, and interactive personal portfolio built using React, TypeScript, Vite, and CSS, designed to showcase my education, skills, journey, projects, and achievements.
@@ -33,11 +35,11 @@ A modern, responsive, and interactive personal portfolio built using React, Type
 
 4 Tawk.to Chat Integration
 
- 5 GitHub Pages Deployment
+5 GitHub Pages Deployment
 
  
 
- Project Structure
+	Project Structure: 
 src/
  ├── assets/
  ├── components/
