@@ -1,3 +1,86 @@
+Personal Portfolio Website – React + TypeScript + Vite
+
+A modern, responsive, and interactive personal portfolio built using React, TypeScript, Vite, and CSS, designed to showcase my education, skills, journey, projects, and achievements.
+
+ Features
+
+1. Animated UI with gradients, glow effects & smooth transitions
+
+2. Typing animation using react-typing-effect
+
+3.  Dark/Light mode toggle
+
+4. AI Chatbot integration (Tawk.to) for real-time chat
+
+5. Fully responsive for mobile, tablet & desktop
+
+6. Reusable React components (modular architecture)
+
+7. Separate sections: About, Journey, Skills, Education, Projects, Certificates, Contact
+
+8. Smooth scrolling navigation
+
+9. Hover animations & interactive cards
+
+
+ Tech Stack
+
+1 React + TypeScript
+
+2 Vite
+
+3 CSS3 (Gradients, Flexbox, Media Queries)
+
+4 Tawk.to Chat Integration
+
+ 5 GitHub Pages Deployment
+
+ 
+
+ Project Structure
+src/
+ ├── assets/
+ ├── components/
+ ├── about.tsx
+ ├── journey.tsx
+ ├── skills.tsx
+ ├── education.tsx
+ ├── projects.tsx
+ ├── certificates.tsx
+ ├── contact.tsx
+ ├── footer.tsx
+ ├── App.tsx
+ └── main.tsx
+
+
+  Setup & Run Locally
+1. npm install
+2. npm run dev
+
+
+Build for production:
+
+1. npm run build
+
+🌐 Deployment (GitHub Pages)
+
+
+Deploy steps:
+
+1) Run npm run build
+
+2) Commit and push the new docs/ folder
+
+Go to:
+GitHub → Repository Settings → Pages → Branch → main → /dist
+
+Save.
+
+Your site will be live in 1–2 minutes.
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
