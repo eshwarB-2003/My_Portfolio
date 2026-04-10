@@ -6,6 +6,15 @@
   overflow: hidden;
   text-align: center;
 }
+.project-link {
+  color: inherit;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: #ff9800; 
+}
+
 
 .projects-bg-shape {
   position: absolute;

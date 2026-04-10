@@ -17,8 +17,8 @@ const Contact: React.FC = () => {
           <div className="contact-card">
             <Mail className="icon" />
             <h2>Email</h2>
-            <a href="mailto:e8082409@gmail.com" className="contact-link">
-              e8082409@gmail.com
+            <a href="mailto:vaitheeshwarb126@gmail.com" className="contact-link">
+              vaitheeshwarb126@gmail.com
             </a>
           </div>
 

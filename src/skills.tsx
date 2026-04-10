@@ -37,8 +37,8 @@ const Skills: React.FC = () => {
            <div className="skill-card">
             <h2>Databases</h2>
             <div className="skill-tags">
+              <span>SQL</span>
               <span>PostgreSQL</span>
-              <span>MongoDB</span>
             </div>
           </div>
 
@@ -60,7 +60,6 @@ const Skills: React.FC = () => {
               <span>GitHub</span>
               <span>VS Code</span>
               <span>Postman</span>
-              <span>Docker</span>
             </div>
           </div>
 

@@ -54,12 +54,9 @@ return (
             
           </div>
           <p className="about-description">
-            I am a passionate Software Engineer with a strong foundation in Computer Science 
-            and hands-on experience in full-stack web development. Currently pursuing my 
-            Master’s at the University of Limerick, I thrive on solving complex problems 
-            through code and building solutions that enhance user experience and efficiency.
+            I’m a software engineer with a strong foundation in computer science, currently pursuing my Master’s at the University of Limerick. I enjoy solving real problems through code and building systems that are reliable, efficient, and easy to use.
           </p>
-          <a href= "https://drive.google.com/file/d/1xJex43uwHhq_Uk4t5Jw3muIp4RLu4s6H/view?usp=sharing" download className="resume-btn">Download Resume</a>
+          <a href= "https://drive.google.com/file/d/1u5OXtlDlRrufq-EtmtyLn2ngx8lYCKkH/view?usp=sharing" download className="resume-btn">Download Resume</a>
          </div>
          </div>
     </section>
